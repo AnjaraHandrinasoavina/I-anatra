@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.information{
+    display: flex;
+    background: none;
+}
+.back-link{
+    margin-right: 20px;
+}
+.btn-back {
+    border: 1px solid #00e676;
+    color: #00e676;
+    padding: 8px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #00e676;
+    color: #08101e;
+}
+.information img{
+    border-radius: 20px 0 0 20px;
+}
+
+.register-container {
+    width: 100%;
+    max-width: 500px;
+    color: #ffffff;
+    background: linear-gradient(
+        to right top,
+        #c894cb 0%,
+        #b890d7 30%,
+        #a68ce4 50%,
+        #9589f2 70%,
+        #8585fe 100%
+    );
+    padding: 30px;
+    border-radius: 0 20px 20px 0;
+}
+
+.register-container h2 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.input-row {
+    display: flex;
+    gap: 15px;
+}
+
+.input-row .formulaire {
+    flex: 1;
+}
+
+.formulaire {
+    margin-bottom: 20px;
+}
+
+.formulaire label {
+    display: block;
+    font-size: 13px;
+    margin-bottom: 8px;
+    color: #e2e8f0;
+    font-weight: 500;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 12px 15px 12px 40px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #333;
+}
+
+.formulaire input:not(.input-wrapper input) {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 14px;
+    background: #ffffff;
+    color: #333;
+}
+
+.input-wrapper input::placeholder,
+.formulaire input::placeholder {
+    color: #a0aec0;
+}
+
+.input-icon {
+    position: absolute;
+    left: 15px;
+    color: #a0aec0;
+    font-size: 15px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    color: #a0aec0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 14px;
+    background: #20402b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    transition: background 0.3s ease;
+}
+
+.btn-submit:hover {
+    background: #2a5238;
+}
+
+.login {
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.login a {
+    text-decoration: none;
+    color: #234e37;
+}
+
+@media (max-width: 500px) {
+    .input-row {
+        flex-direction: column;
+        gap: 0;
+    }
+}
