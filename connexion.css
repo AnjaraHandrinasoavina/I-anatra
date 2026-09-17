@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0f172a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+}
+.information{
+    display: flex;
+    background: none;
+}
+
+.back-link{
+    margin-right: 20px;
+}
+.btn-back {
+    border: 1px solid #00e676;
+    color: #00e676;
+    padding: 8px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+    background: #00e676;
+    color: #08101e;
+}
+.information img{
+    border-radius: 20px 0 0 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    background: linear-gradient(
+        to right top,
+        #c894cb 0%,
+        #b890d7 30%,
+        #a68ce4 50%,
+        #9589f2 70%,
+        #8585fe 100%
+    );
+    border-radius: 0 20px 20px 0;
+    padding: 20px;
+}
+
+.formulaire {
+    flex: 1.1;
+    padding: 40px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.formulaire h2 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.welcome-text {
+    font-size: 16px;
+    color: #c8d0db;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    margin-bottom: 8px;
+    color: #e2e8f0;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 15px;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    outline: none;
+    font-size: 13px;
+    background: #ffffff;
+    color: #333;
+}
+
+.password-wrapper {
+    position: relative;
+}
+
+.password-wrapper input {
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0aec0;
+    cursor: pointer;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #cbd5e1;
+    cursor: pointer;
+}
+
+.forgot-pwd {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background: #1b3d2b;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-submit:hover {
+    background: #234e37;
+}
+.inscription{
+    display: flex;
+    gap: 10px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.inscription a{
+    text-decoration: none;
+    color: #234e37;
+}
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
