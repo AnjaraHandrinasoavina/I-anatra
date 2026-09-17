@@ -161,9 +161,55 @@ body {
     color: #234e37;
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
+    .information {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .information img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 20px 20px 0 0;
+    }
+
+    .register-container {
+        border-radius: 0 0 20px 20px;
+    }
+
+    .back-link {
+        margin-right: 0;
+        margin-bottom: 15px;
+        align-self: flex-start;
+    }
+}
+
+@media (max-width: 550px) {
+    body {
+        padding: 10px;
+    }
+
     .input-row {
         flex-direction: column;
         gap: 0;
+    }
+
+    .register-container {
+        padding: 20px 15px;
+    }
+
+    .register-container h2 {
+        font-size: 22px;
+        text-align: center;
+    }
+
+    .login {
+        flex-direction: column;
+        gap: 5px;
+        font-size: 15px;
+        text-align: center;
     }
 }
